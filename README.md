@@ -10,6 +10,14 @@ and easy testing!
 
 See [Downloads](https://github.com/firmata/firmata_test/downloads) for binaries.
 
+Prerequisites
+---
+
+install wxwidgets  
+```
+sudo apt install libwxgtk3.0-dev
+```
+
 Additional Instructions
 ---
 
