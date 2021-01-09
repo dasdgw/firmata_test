@@ -273,8 +273,8 @@ void MyFrame::OnModeChange(wxCommandEvent &event)
 	} else if (mode == MODE_PWM || mode == MODE_SERVO) {
 		int maxval = (mode == MODE_PWM) ? 255 : 180;
 		wxSlider *slider = new wxSlider(scroll, 6000+pin,
-		  pin_info[pin].value, 0, maxval);
-		wxSize size = wxSize(128, -1);
+		  pin_info[pin].value, 0, maxval, wxDefaultPosition, wxDefaultSize, wxSL_HORIZONTAL|wxSL_VALUE_LABEL|wxSL_MIN_MAX_LABELS);
+		wxSize size = wxSize(256, -1);
 		slider->SetMinSize(size);
 		add_item_to_grid(pin, 2, slider);
 	}
